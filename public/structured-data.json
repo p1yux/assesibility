@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Enable Canada",
+  "url": "https://enablecanada.ca",
+  "logo": "https://enablecanada.ca/android-chrome-512x512.svg",
+  "description": "Enable Canada helps businesses create inclusive digital experiences that empower everyone, regardless of ability. WCAG 2.1 AA, ADA, and AODA compliant accessibility services.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Accessibility Avenue",
+    "addressLocality": "Toronto", 
+    "addressRegion": "ON",
+    "postalCode": "M5V 1A1",
+    "addressCountry": "CA"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-555-123-4567",
+    "contactType": "customer service",
+    "email": "info@enablecanada.ca",
+    "availableLanguage": ["English", "French"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/enablecanada",
+    "https://www.linkedin.com/company/enable-canada",
+    "https://twitter.com/enablecanada"
+  ],
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "43.6532",
+      "longitude": "-79.3832"
+    },
+    "geoRadius": "2000"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://enablecanada.ca/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+} 

@@ -1,0 +1,129 @@
+'use client'
+import { useState } from 'react';
+import Link from 'next/link';
+
+const FAQItem = ({ question, answer, isOpen, onClick }) => {
+  return (
+    <div className="border-b border-gray-200 py-5">
+      <button
+        className="flex w-full justify-between items-center text-left focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+        onClick={onClick}
+        aria-expanded={isOpen}
+      >
+        <span className="text-lg font-medium text-gray-900">{question}</span>
+        <span className="ml-6 flex-shrink-0">
+          {isOpen ? (
+            <svg className="h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fillRule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clipRule="evenodd" />
+            </svg>
+          ) : (
+            <svg className="h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fillRule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clipRule="evenodd" />
+            </svg>
+          )}
+        </span>
+      </button>
+      {isOpen && (
+        <div className="mt-2 pr-12">
+          <p className="text-base text-gray-700">{answer}</p>
+        </div>
+      )}
+    </div>
+  );
+};
+
+const FAQ = () => {
+  const [openIndex, setOpenIndex] = useState(0);
+
+  const faqItems = [
+    {
+      question: "What is digital accessibility?",
+      answer: "Digital accessibility ensures websites and online tools can be used by everyone, including people with disabilities using assistive technologies."
+    },
+    {
+      question: "Who needs to comply with accessibility standards in Canada?",
+      answer: "Federal departments, agencies, and many organizations in provinces with accessibility legislation like Ontario (AODA) and Manitoba (AMA) must comply. Private sector organizations above certain sizes also have compliance requirements."
+    },
+    {
+      question: "What standards do you follow?",
+      answer: "We follow WCAG 2.1 Level AA guidelines, which are recognized internationally and referenced by most accessibility laws and regulations including the AODA in Ontario."
+    },
+    {
+      question: "Can you audit our current website?",
+      answer: "Yes, we offer comprehensive accessibility audits that evaluate your website against WCAG guidelines and provide detailed reports with remediation recommendations."
+    },
+    {
+      question: "Do you work with non-technical teams?",
+      answer: "Absolutely. We work with teams of all technical levels and provide training and support tailored to your team's expertise and needs."
+    },
+    {
+      question: "How long does it take to make a website accessible?",
+      answer: "The timeline varies based on your website's complexity, current accessibility status, and scope of work. Simple sites might take weeks, while complex applications could take several months."
+    },
+    {
+      question: "Can you help during the design and development phase?",
+      answer: "Yes, incorporating accessibility from the beginning is the most efficient approach. We offer design reviews, developer training, and code reviews throughout your project lifecycle."
+    }
+  ];
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? -1 : index);
+  };
+
+  return (
+    <section className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
+        
+        <div className="divide-y divide-gray-200">
+          {faqItems.map((item, index) => (
+            <FAQItem
+              key={index}
+              question={item.question}
+              answer={item.answer}
+              isOpen={index === openIndex}
+              onClick={() => toggleFAQ(index)}
+            />
+          ))}
+        </div>
+
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div className="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 className="text-lg font-medium text-gray-900 mb-3">Chat on WhatsApp</h3>
+            <p className="text-gray-600 mb-4">Have quick questions? Start a conversation with our team now.</p>
+            <Link href="#" className="text-blue-600 hover:text-blue-800 flex items-center font-medium">
+              Start a WhatsApp Chat
+              <svg className="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </Link>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 className="text-lg font-medium text-gray-900 mb-3">Schedule a Call</h3>
+            <p className="text-gray-600 mb-4">Book a free consultation to discuss your accessibility needs.</p>
+            <Link href="#" className="text-blue-600 hover:text-blue-800 flex items-center font-medium">
+              Schedule a Call
+              <svg className="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </Link>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 className="text-lg font-medium text-gray-900 mb-3">Submit an Enquiry</h3>
+            <p className="text-gray-600 mb-4">Not sure where to start? Tell us your needs and we'll guide you.</p>
+            <Link href="#" className="text-blue-600 hover:text-blue-800 flex items-center font-medium">
+              Submit an Inquiry Form
+              <svg className="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FAQ; 

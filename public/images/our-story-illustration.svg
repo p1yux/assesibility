@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .device { fill: #E5E7EB; stroke: #1F2937; }
+    .chat-bubble { fill: #06B6D4; }
+    .chat-bubble-alt { fill: #0E7490; }
+    .person { fill: #6B7280; }
+  </style>
+  
+  <!-- Desktop -->
+  <rect class="device" x="200" y="150" width="400" height="300" rx="8"/>
+  <rect class="chat-bubble" x="250" y="200" width="150" height="40" rx="20"/>
+  <circle class="person" cx="325" cy="300" r="30"/>
+  
+  <!-- Mobile Devices -->
+  <rect class="device" x="100" y="250" width="80" height="140" rx="8"/>
+  <rect class="chat-bubble-alt" x="110" y="270" width="60" height="30" rx="15"/>
+  <circle class="person" cx="140" cy="330" r="20"/>
+  
+  <rect class="device" x="620" y="250" width="80" height="140" rx="8"/>
+  <rect class="chat-bubble" x="630" y="270" width="60" height="30" rx="15"/>
+  <circle class="person" cx="660" cy="330" r="20"/>
+  
+  <!-- Tablet -->
+  <rect class="device" x="450" y="400" width="200" height="150" rx="8"/>
+  <rect class="chat-bubble-alt" x="470" y="420" width="100" height="35" rx="17.5"/>
+  <circle class="person" cx="520" cy="490" r="25"/>
+  
+  <!-- Connection Lines -->
+  <path d="M140 330 L 325 300" stroke="#06B6D4" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M660 330 L 325 300" stroke="#06B6D4" stroke-width="2" stroke-dasharray="4 4"/>
+  <path d="M520 490 L 325 300" stroke="#06B6D4" stroke-width="2" stroke-dasharray="4 4"/>
+</svg> 

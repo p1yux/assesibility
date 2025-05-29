@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <linearGradient id="skinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDBAC" />
+      <stop offset="100%" stop-color="#F1C27D" />
+    </linearGradient>
+    <linearGradient id="phoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4299e1" />
+      <stop offset="100%" stop-color="#3182ce" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="75" cy="75" r="65" fill="#EBF8FF" />
+  
+  <!-- Person -->
+  <g transform="translate(45, 35)">
+    <!-- Head -->
+    <circle cx="25" cy="20" r="15" fill="url(#skinGradient)" />
+    
+    <!-- Hair -->
+    <path d="M10,15 C10,5 20,0 30,5 C40,0 47,10 42,20 C42,20 40,12 30,15 C20,12 10,15 10,15 Z" fill="#5A4538" />
+    
+    <!-- Eyes - frustrated expression -->
+    <path d="M18,18 L23,15" stroke="#5A4538" stroke-width="1.5" stroke-linecap="round" />
+    <path d="M32,18 L27,15" stroke="#5A4538" stroke-width="1.5" stroke-linecap="round" />
+    
+    <!-- Mouth - frustrated -->
+    <path d="M20,27 C22,25 28,25 30,27" stroke="#5A4538" stroke-width="1.5" stroke-linecap="round" fill="none" />
+    
+    <!-- Body -->
+    <path d="M25,35 L25,70 M10,45 L40,45" stroke="#718096" stroke-width="10" stroke-linecap="round" />
+    
+    <!-- Smartphone in hand -->
+    <g transform="translate(30, 55) rotate(15)">
+      <rect x="0" y="0" width="20" height="35" rx="3" fill="white" stroke="#2D3748" stroke-width="2" />
+      <rect x="2" y="4" width="16" height="27" fill="url(#phoneGradient)" opacity="0.9" />
+      <circle cx="10" cy="33" r="2" fill="#A0AEC0" />
+    </g>
+    
+    <!-- Question marks to show confusion -->
+    <text x="55" y="10" font-family="Arial" font-size="14" font-weight="bold" fill="#3182CE">?</text>
+    <text x="60" y="20" font-family="Arial" font-size="20" font-weight="bold" fill="#3182CE">?</text>
+    <text x="50" y="25" font-family="Arial" font-size="16" font-weight="bold" fill="#3182CE">?</text>
+  </g>
+  
+  <!-- Download Problem Icon -->
+  <g transform="translate(100, 40)">
+    <circle cx="15" cy="15" r="15" fill="white" stroke="#3182CE" stroke-width="2" />
+    <path d="M15,5 L15,18 M9,12 L15,18 L21,12" stroke="#3182CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M9,22 L21,22" stroke="#3182CE" stroke-width="2" stroke-linecap="round" />
+    <path d="M20,5 L25,10" stroke="#E53E3E" stroke-width="2" stroke-linecap="round" />
+    <path d="M25,5 L20,10" stroke="#E53E3E" stroke-width="2" stroke-linecap="round" />
+  </g>
+</svg> 

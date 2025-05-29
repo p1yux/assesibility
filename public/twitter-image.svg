@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#ffffff"/>
+  
+  <!-- Red background for logo area -->
+  <rect x="75" y="187.5" width="300" height="300" fill="#c91c1c" rx="20" ry="20"/>
+  
+  <!-- EC Logo text -->
+  <text x="120" y="377.5" font-family="Arial, sans-serif" font-size="150" font-weight="bold" fill="white">EC</text>
+  
+  <!-- Company name -->
+  <text x="405" y="275" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#c91c1c">ENABLE CANADA</text>
+  
+  <!-- Tagline -->
+  <text x="405" y="360" font-family="Arial, sans-serif" font-size="48" font-weight="normal" fill="#333333">Making Digital Experiences</text>
+  <text x="405" y="420" font-family="Arial, sans-serif" font-size="48" font-weight="normal" fill="#333333">Accessible For Everyone</text>
+  
+  <!-- Hashtags -->
+  <text x="405" y="520" font-family="Arial, sans-serif" font-size="36" font-weight="normal" fill="#666666">#WebAccessibility #DigitalInclusion</text>
+</svg> 
