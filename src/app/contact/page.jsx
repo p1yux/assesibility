@@ -213,12 +213,11 @@ export default function ContactPage() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-12 bg-white border-t border-gray-100">
+      <section className="py-12 bg-white border-t border-gray-100 scale-150 mt-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <blockquote className="text-center">
+          <blockquote className="text-center flex items-center gap-2 justify-center">
+            <Image src="/images/comma.svg" alt="Quote" width={30} height={30} className="mt-[-50]"/>
             <p className="text-2xl font-medium text-gray-900 mb-4">
-              <span className="text-red-800 text-4xl font-serif mr-2">
-              </span>
               Accessibility is not a feature. It's a foundation.
               <br />
               When we design for inclusion, we all benefit.
