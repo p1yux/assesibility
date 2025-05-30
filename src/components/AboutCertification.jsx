@@ -11,6 +11,7 @@ const AboutCertification = () => {
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-gray-900 rounded-lg overflow-hidden">
+          
           <div className="flex flex-col md:flex-row">
             {/* Left side - Certifications */}
             <div className="md:w-7/12 p-8 md:p-12 text-white">
