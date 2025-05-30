@@ -4,7 +4,7 @@ import Link from "next/link";
 const ServicesHero = () => {
   return (
   
-       <section className="relative w-[80%] h-[350px] left-[10%] mb-8">
+       <section className="relative w-[80%] h-[350px] left-[10%] mb-8 mt-20">
       {/* Background Image */}
       <Image 
       className="rounded-3xl"

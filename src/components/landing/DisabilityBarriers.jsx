@@ -3,7 +3,15 @@ import Image from 'next/image';
 
 const DisabilityBarriers = () => {
   return (
-    <section className="py-16 bg-white">
+    <section 
+      className="py-16 bg-white"
+      style={{
+        backgroundImage: "url('/images/updated/landing/bg2nd.svg')",
+        backgroundSize: '50% 100%',
+        backgroundPosition: 'right top',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-5xl font-bold mb-3 text-black">The Reality of Disability Barriers</h2>
@@ -46,7 +54,7 @@ const DisabilityBarriers = () => {
         </div>
 
         {/* Statistics Section */}
-        <div className="mt-16 bg-white rounded-lg p-8 border border-gray-100 shadow-sm">
+        <div className="mt-16 bg-white-opacity-50 rounded-lg p-8 border border-gray-100 shadow-sm">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {/* Stat 1 */}
             <div className="text-center">
@@ -73,8 +81,8 @@ const DisabilityBarriers = () => {
             </div>
           </div>
 
-          <div className="mt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-gray-500 mb-4 md:mb-0">
+          <div className="mt-8 flex flex-col md:flex-row justify-between items-center bg-[#E9E9E9] rounded-lg p-4">
+            <p className="text-sm text-gray-800 mb-4 md:mb-0">
               Data from the 2022 Canadian Survey on Disability and the 2024 Survey Series on Accessibility.
             </p>
             <a 

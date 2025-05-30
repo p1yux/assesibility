@@ -75,50 +75,50 @@ const FAQ = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
         
-        <div className="divide-y divide-gray-200">
-          {faqItems.map((item, index) => (
-            <FAQItem
-              key={index}
-              question={item.question}
-              answer={item.answer}
-              isOpen={index === openIndex}
-              onClick={() => toggleFAQ(index)}
-            />
-          ))}
-        </div>
-
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div className="bg-white p-6 rounded-lg border border-gray-200">
-            <h3 className="text-lg font-medium text-gray-900 mb-3">Chat on WhatsApp</h3>
-            <p className="text-gray-600 mb-4">Have quick questions? Start a conversation with our team now.</p>
-            <Link href="#" className="text-blue-600 hover:text-blue-800 flex items-center font-medium">
-              Start a WhatsApp Chat
-              <svg className="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </Link>
+        {/* Side by side layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* FAQ Questions - Left side (2/3 width) */}
+          <div className="lg:col-span-2">
+            <div className="divide-y divide-gray-200">
+              {faqItems.map((item, index) => (
+                <FAQItem
+                  key={index}
+                  question={item.question}
+                  answer={item.answer}
+                  isOpen={index === openIndex}
+                  onClick={() => toggleFAQ(index)}
+                />
+              ))}
+            </div>
           </div>
 
-          <div className="bg-white p-6 rounded-lg border border-gray-200">
-            <h3 className="text-lg font-medium text-gray-900 mb-3">Schedule a Call</h3>
-            <p className="text-gray-600 mb-4">Book a free consultation to discuss your accessibility needs.</p>
-            <Link href="#" className="text-blue-600 hover:text-blue-800 flex items-center font-medium">
-              Schedule a Call
-              <svg className="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </Link>
-          </div>
+          {/* Contact Cards - Right side (1/3 width) */}
+          <div className="lg:col-span-1">
+            <div className="space-y-[-10px]">
+              <div className="bg-white p-6 rounded-lg">
+                <h3 className="text-lg font-medium text-gray-900 mb-3">Chat on WhatsApp</h3>
+                <p className="text-gray-600 mb-4">Have quick questions? Start a conversation with our team now.</p>
+                <Link href="#" className="text-blue-600 hover:text-blue-800 flex items-center font-medium underline underline-offset-4">
+                  Start a WhatsApp Chat ↗
+                </Link>
+              </div>
 
-          <div className="bg-white p-6 rounded-lg border border-gray-200">
-            <h3 className="text-lg font-medium text-gray-900 mb-3">Submit an Enquiry</h3>
-            <p className="text-gray-600 mb-4">Not sure where to start? Tell us your needs and we'll guide you.</p>
-            <Link href="#" className="text-blue-600 hover:text-blue-800 flex items-center font-medium">
-              Submit an Inquiry Form
-              <svg className="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </Link>
+              <div className="bg-white p-6 rounded-lg">
+                <h3 className="text-lg font-medium text-gray-900 mb-3">Schedule a Call</h3>
+                <p className="text-gray-600 mb-4">Book a free consultation to discuss your accessibility needs.</p>
+                <Link href="#" className="text-blue-600 hover:text-blue-800 flex items-center font-medium underline underline-offset-4">
+                  Schedule a Call ↗
+                </Link>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg">
+                <h3 className="text-lg font-medium text-gray-900 mb-3">Submit an Enquiry</h3>
+                <p className="text-gray-600 mb-4">Not sure where to start? Tell us your needs and we'll guide you.</p>
+                <Link href="#" className="text-blue-600 hover:text-blue-800 flex items-center font-medium underline underline-offset-4">
+                  Submit an Inquiry Form ↗
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

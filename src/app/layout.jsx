@@ -115,7 +115,7 @@ export default function RootLayout({ children }) {
           Skip to main content
         </a>
         <Navbar />
-        <main id="main-content" className="flex-grow">
+        <main id="main-content" className="flex-grow bg-white">
           {children}
           
         </main>

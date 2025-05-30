@@ -66,6 +66,34 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
+        <div className="flex justify-end py-4 items-center">
+            <button
+              onClick={goToPrevSlide}
+              className="bg-red-100 hover:bg-red-200 text-red-500 p-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-500"
+              aria-label="Previous slide"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+            </button>
+            
+            <div className="mx-4">
+              <span className="text-gray-700 font-medium">{currentSlide + 1}</span>
+              <span className="text-gray-400 mx-1">/</span>
+              <span className="text-gray-700 font-medium">{slides.length}</span>
+            </div>
+            
+            <button
+              onClick={goToNextSlide}
+              className="bg-red-100 hover:bg-red-200 text-red-500 p-2 rounded-r-md focus:outline-none focus:ring-2 focus:ring-red-500"
+              aria-label="Next slide"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+              </svg>
+            </button>
+          </div>
+
         <div className="relative">
           <div className="overflow-hidden">
             <div 
@@ -94,35 +122,6 @@ const WhyChooseUs = () => {
                 </div>
               ))}
             </div>
-          </div>
-
-          {/* Navigation controls */}
-          <div className="flex justify-center mt-8 items-center">
-            <button
-              onClick={goToPrevSlide}
-              className="bg-red-100 hover:bg-red-200 text-red-500 p-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-500"
-              aria-label="Previous slide"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
-              </svg>
-            </button>
-            
-            <div className="mx-4">
-              <span className="text-gray-700 font-medium">{currentSlide + 1}</span>
-              <span className="text-gray-400 mx-1">/</span>
-              <span className="text-gray-700 font-medium">{slides.length}</span>
-            </div>
-            
-            <button
-              onClick={goToNextSlide}
-              className="bg-red-100 hover:bg-red-200 text-red-500 p-2 rounded-r-md focus:outline-none focus:ring-2 focus:ring-red-500"
-              aria-label="Next slide"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-              </svg>
-            </button>
           </div>
         </div>
       </div>

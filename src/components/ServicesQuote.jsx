@@ -1,6 +1,6 @@
 const ServicesQuote = () => {
   return (
-    <section className="py-12 bg-white border-t border-b border-gray-100">
+    <section className="py-12 bg-[#F2F2F2] border-t border-b border-gray-100">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <blockquote className="text-center">
           <div className="flex justify-center mb-2">

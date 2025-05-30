@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-[#1E1E1E] text-white">
       {/* CTA Section */}
       <div className="border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -13,7 +13,7 @@ const Footer = () => {
             <p className="text-white text-lg font-medium">Ready to get started?</p>
             <Link 
               href="/contact" 
-              className="bg-red-800 text-white px-6 py-2 rounded-md hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-red-800 focus:ring-offset-2 mt-4 md:mt-0"
+              className="bg-red-800 text-white px-6 py-2 rounded-md hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-red-800 focus:ring-offset-2 mt-4 md:mt-0 mr-20"
             >
               Talk to an Expert
             </Link>
@@ -88,26 +88,26 @@ const Footer = () => {
           </div>
 
           {/* Services Column */}
-          <div className="col-span-1">
+          <div className="col-span-1 ml-20">
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services/audits" className="text-gray-300 hover:text-white">
+                <Link href="/contact" className="text-gray-300 hover:text-white">
                   Accessibility Audits
                 </Link>
               </li>
               <li>
-                <Link href="/services/remediation" className="text-gray-300 hover:text-white">
+                <Link href="/contact" className="text-gray-300 hover:text-white">
                   Website Remediation
                 </Link>
               </li>
               <li>
-                <Link href="/services/pdf" className="text-gray-300 hover:text-white">
+                <Link href="/contact" className="text-gray-300 hover:text-white">
                   PDF Accessibility
                 </Link>
               </li>
               <li>
-                <Link href="/services/training" className="text-gray-300 hover:text-white">
+                <Link href="/contact" className="text-gray-300 hover:text-white">
                   Training and Consulting
                 </Link>
               </li>
@@ -115,7 +115,7 @@ const Footer = () => {
           </div>
 
           {/* About Column */}
-          <div className="col-span-1">
+          <div className="col-span-1 ml-20">
             <h3 className="text-lg font-semibold mb-4">About</h3>
             <ul className="space-y-2">
               <li>
@@ -137,7 +137,7 @@ const Footer = () => {
           </div>
 
           {/* Help Column */}
-          <div className="col-span-1">
+          <div className="col-span-1 ml-20">
             <h3 className="text-lg font-semibold mb-4">Help</h3>
             <ul className="space-y-2">
               <li>
@@ -158,7 +158,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-400">© {currentYear} Enable Canada | All rights reserved.</p>
           <div className="mt-4 md:mt-0 flex space-x-6">
-            <Link href="/accessibility" className="text-sm text-gray-400 hover:text-white">
+            <Link href="/regulations" className="text-sm text-gray-400 hover:text-white">
               Accessibility Statement
             </Link>
             <Link href="/privacy" className="text-sm text-gray-400 hover:text-white">

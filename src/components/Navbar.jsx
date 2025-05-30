@@ -16,11 +16,14 @@ const Navbar = () => {
     }
   };
 
-  const navLinks = [
+  const mainNavLinks = [
     { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
     { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact" },
+  ];
+
+  const rightNavLinks = [
     { href: "/help", label: "Help" },
   ];
 
@@ -31,15 +34,33 @@ const Navbar = () => {
       </a>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
         <div className="flex justify-between items-center">
+          {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center h-20 w-32" aria-label="Accessibility - Homepage">
               <img src="/images/websiteLogo.svg" alt="" />
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Centered Desktop Navigation */}
+          <div className="hidden md:flex items-center justify-center flex-1">
+            <div className="flex items-center space-x-8">
+              {mainNavLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-gray-900 hover:text-black focus:text-black focus:underline hover:underline transition-colors px-3 py-2 rounded-md font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                  aria-label={link.label}
+                  style={{ fontSize: "1.1rem", lineHeight: "1.5" }}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Side - Help and Talk to Expert */}
           <div className="hidden md:flex items-center space-x-6">
-            {navLinks.map((link) => (
+            {rightNavLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -117,7 +138,7 @@ const Navbar = () => {
           id="mobile-menu"
         >
           <div className="flex flex-col space-y-4 pb-3">
-            {navLinks.map((link) => (
+            {[...mainNavLinks, ...rightNavLinks].map((link) => (
               <Link
                 key={link.href}
                 href={link.href}

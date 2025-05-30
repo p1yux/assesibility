@@ -4,8 +4,8 @@ const CTA = () => {
   return (
     <section className="py-20 md:py-28 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-4xl font-bold text-black mb-8">
+      <div className="max-w-full mx-auto">
+        <h2 className="text-4xl font-bold text-black mb-3">
           Ready to make your digital services accessible?
         </h2>
         <p className="text-2xl text-gray-700 mb-10 leading-relaxed">
@@ -21,10 +21,10 @@ const CTA = () => {
           </Link>
           <Link
             href="/regulations"
-            className="inline-flex items-center justify-center px-10 py-4  text-lg font-medium rounded-lg text-blue-600 underline"
+            className="inline-flex items-center justify-center px-10 py-4  text-lg font-medium rounded-lg text-blue-600 underline underline-offset-4"
             aria-label="Learn about accessibility regulations"
           >
-            How It Works
+            How It Works ↗
           </Link>
         </div>
       </div>

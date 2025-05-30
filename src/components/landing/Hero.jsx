@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10 w-full mb-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-6">
-            <h1 className="text-3xl md:text-4xl font-bold leading-tight text-black">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight text-black">
               Build Inclusive &<br />
               Accessible Websites<br />
               The Right Way
