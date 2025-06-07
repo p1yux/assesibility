@@ -71,9 +71,11 @@ const AboutValues = () => {
           ))}
         </div>
       </div>
-      <div className="mt-30 relative flex justify-center">
-        {/* Background blackbox image */}
-        <div className="relative">
+
+      {/* Blackbox image - Responsive */}
+      <div className="mt-16 relative flex justify-center">
+        {/* Complex layout for larger screens (lg and above) */}
+        <div className="hidden lg:block relative">
           <Image 
             src="/images/about-us-blackbox.png" 
             alt="About Values Background"
@@ -144,10 +146,21 @@ const AboutValues = () => {
             </div>
           </div>
         </div>
+
+        {/* Simple image for smaller screens */}
+        <div className="lg:hidden w-full max-w-4xl px-4">
+          <Image 
+            src="/images/updated/mapimg/image1.png" 
+            alt="Accessibility Map"
+            width={800}
+            height={400}
+            className="rounded-lg w-full h-auto"
+          />
+        </div>
       </div>
     </section>
     
   );
 };
 
-export default AboutValues; 
+export default AboutValues;

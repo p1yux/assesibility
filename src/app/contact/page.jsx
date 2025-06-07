@@ -64,6 +64,7 @@ export default function ContactPage() {
                 </p>
                 <button
                   className="bg-red-800 text-white px-5 py-2 rounded font-medium hover:bg-red-900 transition-colors text-sm"
+                  onClick={() => window.open('https://cal.com/enabledtalent/15min', '_blank')}
                 >
                   Book Now
                 </button>
@@ -77,6 +78,7 @@ export default function ContactPage() {
                 </p>
                 <button
                   className="bg-red-800 text-white px-5 py-2 rounded font-medium hover:bg-red-900 transition-colors text-sm"
+                  onClick={() => window.open('https://cal.com/enabledtalent/30min', '_blank')}
                 >
                   Book Now
                 </button>
@@ -90,6 +92,7 @@ export default function ContactPage() {
                 </p>
                 <button
                   className="bg-red-800 text-white px-5 py-2 rounded font-medium hover:bg-red-900 transition-colors text-sm"
+                  onClick={() => window.open('https://cal.com/enabledtalent', '_blank')}
                 >
                   Check Availability
                 </button>
@@ -116,8 +119,9 @@ export default function ContactPage() {
                   <div className="ml-3">
                     <p className="font-medium text-gray-900">Office</p>
                     <p className="text-gray-600 text-sm">
-                      123 Accessibility Street<br />
-                      Toronto, ON M5V 2K7
+                      11 Peter Street,
+                      9th Floor, Suite 902 <br/>
+                      Toronto, ON M5V 2H
                     </p>
                   </div>
                 </div>
@@ -130,7 +134,7 @@ export default function ContactPage() {
                   <div className="ml-3">
                     <p className="font-medium text-gray-900">Email</p>
                     <a href="mailto:contact@enablecanada.ca" className="text-gray-600 text-sm hover:underline">
-                      contact@enablecanada.ca
+                    Aman@enabledtalent.com
                     </a>
                   </div>
                 </div>
@@ -230,8 +234,6 @@ export default function ContactPage() {
           </blockquote>
         </div>
       </section>
-
-
     </div>
   );
 } 

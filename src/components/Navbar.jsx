@@ -3,8 +3,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
+import BookNowModal from '@/components/BookNowModal';
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isBookNowOpen, setIsBookNowOpen] = useState(false);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -71,14 +74,14 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/contact"
+            <button
+              onClick={() => setIsBookNowOpen(true)}
               className="bg-red-800 text-white hover:bg-red-900 focus:bg-red-900 transition-colors px-6 py-2 rounded-md font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-800"
               aria-label="Talk to an Expert"
               style={{ fontSize: "1.1rem", lineHeight: "1.5" }}
             >
               Talk to an Expert
-            </Link>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -150,18 +153,22 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/contact"
+            <button
+              onClick={() => {
+                setIsMenuOpen(false);
+                setIsBookNowOpen(true);
+              }}
               className="bg-red-800 text-white hover:bg-red-900 text-center px-4 py-3 rounded-lg font-medium block focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-800"
               aria-label="Talk to an Expert"
-              onClick={() => setIsMenuOpen(false)}
               style={{ fontSize: "1.15rem", lineHeight: "1.5" }}
             >
               Talk to an Expert
-            </Link>
+            </button>
           </div>
         </div>
       </nav>
+
+      <BookNowModal isOpen={isBookNowOpen} onClose={() => setIsBookNowOpen(false)} />
     </header>
   );
 };
