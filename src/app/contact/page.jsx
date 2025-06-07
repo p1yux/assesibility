@@ -26,10 +26,10 @@ export default function ContactPage() {
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative w-[80%] top-14 left-[10%] h-[350px]">
-        <Image 
-        className="rounded-3xl"
-          src="/images/contact-herosection-image.png" 
-          alt="Map with location pins" 
+        <Image
+          className="rounded-3xl"
+          src="/images/contact-herosection-image.png"
+          alt="Map with location pins"
           fill
           style={{ objectFit: 'cover' }}
           priority
@@ -62,7 +62,7 @@ export default function ContactPage() {
                 <p className="text-gray-600 mb-4 text-sm">
                   Let's connect for a quick 15-minute catch-up or introduction to get aligned.
                 </p>
-                <button 
+                <button
                   className="bg-red-800 text-white px-5 py-2 rounded font-medium hover:bg-red-900 transition-colors text-sm"
                 >
                   Book Now
@@ -75,7 +75,7 @@ export default function ContactPage() {
                 <p className="text-gray-600 mb-4 text-sm">
                   Let's connect for a relaxed 30-minute conversation and exchange ideas.
                 </p>
-                <button 
+                <button
                   className="bg-red-800 text-white px-5 py-2 rounded font-medium hover:bg-red-900 transition-colors text-sm"
                 >
                   Book Now
@@ -88,7 +88,7 @@ export default function ContactPage() {
                 <p className="text-gray-600 mb-4 text-sm">
                   Browse our full schedule and pick a time that fits.
                 </p>
-                <button 
+                <button
                   className="bg-red-800 text-white px-5 py-2 rounded font-medium hover:bg-red-900 transition-colors text-sm"
                 >
                   Check Availability
@@ -110,8 +110,8 @@ export default function ContactPage() {
                 {/* Office */}
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-13 h-13 bg-red-50 rounded-full flex items-center justify-center">
-                   
-                   <img src="/images/location.svg" alt="" />
+
+                    <img src="/images/location.svg" alt="" />
                   </div>
                   <div className="ml-3">
                     <p className="font-medium text-gray-900">Office</p>
@@ -166,8 +166,8 @@ export default function ContactPage() {
               <div className="mt-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Follow Us</h3>
                 <div className="flex space-x-4">
-                  <Link 
-                    href="https://twitter.com" 
+                  <Link
+                    href="https://twitter.com"
                     className="text-gray-800 hover:text-gray-600"
                     aria-label="Twitter"
                   >
@@ -175,8 +175,8 @@ export default function ContactPage() {
                       <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
                     </svg>
                   </Link>
-                  <Link 
-                    href="https://linkedin.com" 
+                  <Link
+                    href="https://linkedin.com"
                     className="text-gray-800 hover:text-gray-600"
                     aria-label="LinkedIn"
                   >
@@ -184,8 +184,8 @@ export default function ContactPage() {
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                   </Link>
-                  <Link 
-                    href="https://wa.me/16473351369" 
+                  <Link
+                    href="https://wa.me/16473351369"
                     className="text-gray-800 hover:text-gray-600"
                     aria-label="WhatsApp"
                   >
@@ -210,11 +210,19 @@ export default function ContactPage() {
             Our team is trained to assist with various communication needs and preferences.
           </p>
         </div>
-          <section className="py-12 bg-white border-t border-gray-100  scale-150 w-[80%]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 ml-44 ">
-          <blockquote className="text-center flex items-center justify-center">
-            <Image src="/images/comma.svg" alt="Quote" width={30} height={30} className="mt-[-40]"/>
-            <p className="text-2xl font-medium text-gray-900">
+
+      </section>
+      <section className="py-12 bg-white border-t border-gray-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 ">
+          <blockquote className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
+            <Image
+              src="/images/comma.svg"
+              alt="Quote"
+              width={40}
+              height={40}
+              className="flex-shrink-0"
+            />
+            <p className="text-2xl sm:text-4xl font-semibold text-gray-900 leading-snug max-w-4xl">
               Accessibility is not a feature. It's a foundation.
               <br />
               When we design for inclusion, we all benefit.
@@ -222,10 +230,8 @@ export default function ContactPage() {
           </blockquote>
         </div>
       </section>
-      </section>
 
-     
-    
+
     </div>
   );
 } 
