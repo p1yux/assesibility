@@ -47,7 +47,7 @@ const Help = () => {
   return (
     <main className="bg-white">
       {/* Hero Section */}
-      <div className="relative w-[80%] h-[300px] left-[9%]">
+      <div className="relative w-[80%] top-14 h-[300px] left-[9%]">
       
 
         <Image 
@@ -64,7 +64,7 @@ const Help = () => {
       </div>
 
       {/* FAQ Section */}
-      <div className="max-w-7xl mx-auto px-4 py-8">
+      <div className="max-w-7xl mx-auto px-4 py-28">
         {/* FAQ Header */}
         <div className="mb-8">
           <div className="inline-block bg-[#ECD0D1] text-[#1E1E1E] px-8 py-2 rounded-lg text-sm font-medium mb-4">

@@ -7,7 +7,7 @@ const ServiceCard = ({ number, title, description, learnMoreLink }) => {
       <div className="relative">
         {/* Number Badge */}
         <div className="absolute right-3 top-2 z-20">
-          <div className="bg-[#D18A8C] w-10 h-10 rounded-2xl md:w-20 md:h-20 flex items-center justify-center text-white font-bold text-2xl shadow-md-inner">
+          <div className="bg-[#D18A8C] w-18 h-18 sm: rounded-2xl md:w-20 md:h-20 flex items-center justify-center text-white font-bold text-2xl shadow-md-inner">
             {number}
           </div>
         </div>

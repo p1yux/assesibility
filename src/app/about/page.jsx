@@ -1,6 +1,6 @@
 import AboutHero from "@/components/AboutHero";
 import AboutMission from "@/components/AboutMission";
-import AboutCertification from "@/components/AboutCertification";
+// import AboutCertification from "@/components/AboutCertification";
 import AboutValues from "@/components/AboutValues";
 import CTA from "@/components/landing/CTA";
 export const metadata = {
@@ -13,7 +13,7 @@ export default function AboutPage() {
     <div className="bg-gray-50">
       <AboutHero />
       <AboutMission />
-      <AboutCertification />
+      {/* <AboutCertification /> */}
       <AboutValues />
       <CTA />
     </div>

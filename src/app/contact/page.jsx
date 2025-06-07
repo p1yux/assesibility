@@ -25,7 +25,7 @@ export default function ContactPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative w-[80%] left-[10%] h-[350px]">
+      <section className="relative w-[80%] top-14 left-[10%] h-[350px]">
         <Image 
         className="rounded-3xl"
           src="/images/contact-herosection-image.png" 
@@ -34,7 +34,7 @@ export default function ContactPage() {
           style={{ objectFit: 'cover' }}
           priority
         />
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 top-16 flex items-center justify-center">
           <div className="text-center text-white">
             <h1 className="text-5xl font-bold mb-6">Let's Make Digital Spaces</h1>
             <h2 className="text-5xl font-bold mb-6">More Inclusive</h2>
@@ -46,7 +46,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Content Section */}
-      <section className="py-12 bg-white">
+      <section className="py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Send Us a Message Section */}
@@ -210,14 +210,11 @@ export default function ContactPage() {
             Our team is trained to assist with various communication needs and preferences.
           </p>
         </div>
-      </section>
-
-      {/* Quote Section */}
-      <section className="py-12 bg-white border-t border-gray-100 scale-150 mt-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <blockquote className="text-center flex items-center gap-2 justify-center">
-            <Image src="/images/comma.svg" alt="Quote" width={30} height={30} className="mt-[-50]"/>
-            <p className="text-2xl font-medium text-gray-900 mb-4">
+          <section className="py-12 bg-white border-t border-gray-100  scale-150 w-[80%]">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 ml-44 ">
+          <blockquote className="text-center flex items-center justify-center">
+            <Image src="/images/comma.svg" alt="Quote" width={30} height={30} className="mt-[-40]"/>
+            <p className="text-2xl font-medium text-gray-900">
               Accessibility is not a feature. It's a foundation.
               <br />
               When we design for inclusion, we all benefit.
@@ -225,8 +222,9 @@ export default function ContactPage() {
           </blockquote>
         </div>
       </section>
+      </section>
 
-      {/* Accessibility Commitment Section */}
+     
     
     </div>
   );
