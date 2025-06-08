@@ -1,6 +1,7 @@
 const ServicesCards = () => {
   const services = [
     {
+      
       title: "Accessibility Audits & Assessments",
       description:
         "Comprehensive evaluations of websites and apps against WCAG 2.1/2.2 standards, combining automated scans and expert manual testing including assistive tech users.",
@@ -76,7 +77,7 @@ const ServicesCards = () => {
 
   return (
     <section className="py-10 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div id="serve" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {services.map((service, index) => {
             const isLeft = index % 2 === 0;

@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from 'react';
+import BookNowModal from '@/components/BookNowModal';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(0);
+  const [isBookNowOpen, setIsBookNowOpen] = useState(false);
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -90,7 +92,7 @@ const FAQ = () => {
               <h2 className="text-xl font-semibold mb-2">Chat on WhatsApp</h2>
               <p className="text-gray-600 mb-4">Have quick questions? Start a conversation with our team now.</p>
               <a 
-                href="https://wa.me/yourphonenumber" 
+                href="" 
                 className="text-blue-600 hover:underline flex items-center font-medium"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -119,19 +121,21 @@ const FAQ = () => {
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
               <h2 className="text-xl font-semibold mb-2">Submit an Enquiry</h2>
               <p className="text-gray-600 mb-4">Not sure where to start? Tell us your needs and we'll guide you.</p>
-              <a 
-                href="/contact#inquiry-form" 
+              <button 
+                onClick={() => setIsBookNowOpen(true)}
                 className="text-blue-600 hover:underline flex items-center font-medium"
               >
                 Submit an Inquiry Form
                 <svg className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </div>
+
+      <BookNowModal isOpen={isBookNowOpen} onClose={() => setIsBookNowOpen(false)} />
     </div>
   );
 };

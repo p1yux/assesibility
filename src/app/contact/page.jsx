@@ -167,7 +167,7 @@ export default function ContactPage() {
               </div>
 
               {/* Follow Us */}
-              <div className="mt-8">
+              {/* <div className="mt-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Follow Us</h3>
                 <div className="flex space-x-4">
                   <Link
@@ -198,7 +198,7 @@ export default function ContactPage() {
                     </svg>
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

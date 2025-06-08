@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import Link from 'next/link';
+import BookNowModal from '@/components/BookNowModal';
 
 const FAQItem = ({ question, answer, isOpen, onClick }) => {
   return (
@@ -34,6 +35,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(0);
+  const [isBookNowOpen, setIsBookNowOpen] = useState(false);
 
   const faqItems = [
     {
@@ -71,7 +73,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
         
@@ -114,14 +116,19 @@ const FAQ = () => {
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="text-lg font-medium text-gray-900 mb-3">Submit an Enquiry</h3>
                 <p className="text-gray-600 mb-4">Not sure where to start? Tell us your needs and we'll guide you.</p>
-                <Link href="#" className="text-blue-600 hover:text-blue-800 flex items-center font-medium underline underline-offset-4">
+                <button 
+                  onClick={() => setIsBookNowOpen(true)}
+                  className="text-blue-600 hover:text-blue-800 flex items-center font-medium underline underline-offset-4"
+                >
                   Submit an Inquiry Form ↗
-                </Link>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <BookNowModal isOpen={isBookNowOpen} onClose={() => setIsBookNowOpen(false)} />
     </section>
   );
 };
