@@ -128,11 +128,11 @@ const Footer = () => {
                   Benefits
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/about#team" className="text-gray-300 hover:text-white">
                   Team
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
