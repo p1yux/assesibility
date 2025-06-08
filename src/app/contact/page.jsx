@@ -159,7 +159,7 @@ export default function ContactPage() {
                   </div>
                   <div className="ml-3">
                     <p className="font-medium text-gray-900">WhatsApp</p>
-                    <a href="https://wa.me/16473351369" className="text-gray-600 text-sm hover:underline">
+                    <a href="https://wa.me/16473351369" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:underline">
                       (647) 335-1369
                     </a>
                   </div>
