@@ -38,8 +38,8 @@ export default function ContactPage() {
           <div className="text-center text-white">
             <h1 className="text-5xl font-bold mb-6">Let's Make Digital Spaces</h1>
             <h2 className="text-5xl font-bold mb-6">More Inclusive</h2>
-            <div className="inline-block bg-red-800 px-8 py-2">
-              <p className="text-3xl font-bold">Together</p>
+            <div className="inline-block rounded-2xl bg-red-800 px-8 py-2">
+              <button  className="text-2xl font-bold">Together</button>
             </div>
           </div>
         </div>

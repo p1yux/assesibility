@@ -1,7 +1,7 @@
 const ServicesCards = () => {
   const services = [
     {
-      
+      id: "audits",
       title: "Accessibility Audits & Assessments",
       description:
         "Comprehensive evaluations of websites and apps against WCAG 2.1/2.2 standards, combining automated scans and expert manual testing including assistive tech users.",
@@ -14,6 +14,7 @@ const ServicesCards = () => {
       ],
     },
     {
+      id: "remediation",
       title: "Remediation & Development Support",
       description:
         "Hands-on support to fix accessibility issues or guide your team in implementing inclusive code practices — all aimed at achieving WCAG Level AA compliance.",
@@ -26,6 +27,7 @@ const ServicesCards = () => {
       ],
     },
     {
+      id: "monitoring",
       title: "Ongoing Compliance Monitoring & Testing",
       description:
         "Continuous accessibility tracking through subscription-based tools to catch issues early, ensure updates stay compliant, and validate real-world usability with expert oversight.",
@@ -38,6 +40,7 @@ const ServicesCards = () => {
       ],
     },
     {
+      id: "training",
       title: "Accessibility Training & Consulting",
       description:
         "Empowering teams with the knowledge and strategies to build inclusive digital experiences through hands-on training and expert consulting support.",
@@ -50,6 +53,7 @@ const ServicesCards = () => {
       ],
     },
     {
+      id: "assistive",
       title: "Assistive Technology & Alternate Formats",
       description:
         "Support for inclusive, accessible communication through accessible media, document conversion, and assistive tech compatibility testing and validation.",
@@ -62,6 +66,7 @@ const ServicesCards = () => {
       ],
     },
     {
+      id: "automated",
       title: "Automated Accessibility Solutions",
       description:
         "Accelerate accessibility with smart, scalable tools like browser plugins, API integrations, and AI-driven solutions that streamline testing and remediation.",
@@ -97,7 +102,8 @@ const ServicesCards = () => {
             return (
               <div
                 key={index}
-                className={`p-6 rounded-xl shadow-md transition-all duration-300 ${bgColor}`}
+                id={service.id}
+                className={`p-6 rounded-xl shadow-md transition-all duration-300 ${bgColor} scroll-mt-34`}
               >
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {service.title}

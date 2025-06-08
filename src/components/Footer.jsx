@@ -92,22 +92,22 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-white">
+                <Link href="/services#audits" className="text-gray-300 hover:text-white">
                   Accessibility Audits
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-white">
+                <Link href="/services#remediation" className="text-gray-300 hover:text-white">
                   Website Remediation
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-white">
+                <Link href="/services#assistive" className="text-gray-300 hover:text-white">
                   PDF Accessibility
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-white">
+                <Link href="/services#training" className="text-gray-300 hover:text-white">
                   Training and Consulting
                 </Link>
               </li>
@@ -124,7 +124,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/about#benefits" className="text-gray-300 hover:text-white">
+                <Link href="/about#Benefits" className="text-gray-300 hover:text-white scroll-mt-24">
                   Benefits
                 </Link>
               </li>

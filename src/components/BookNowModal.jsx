@@ -112,10 +112,7 @@ const BookNowModal = ({ isOpen, onClose }) => {
         ) : (
           <div className="flex flex-col items-center justify-center p-12 min-h-[350px]">
             <div className="mb-6">
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="28" cy="28" r="28" fill="#22C55E"/>
-                <path d="M39 22L25.75 35L17 26.8182" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+              <img className='h-20 w-20' src="checktick.svg" alt="" />
             </div>
             <h2 className="text-2xl font-bold text-center text-black mb-2">You're All Set!</h2>
             <p className="text-center text-gray-700 mb-1">Thanks for reaching out. we've received your request.</p>

@@ -86,7 +86,7 @@ const DisabilityBarriers = () => {
               Data from the 2022 Canadian Survey on Disability and the 2024 Survey Series on Accessibility.
             </p>
             <a 
-              href="#contact" 
+              href="/contact" 
               className="bg-white text-red-600 border border-red-600 px-6 py-2 rounded-lg hover:bg-red-50 transition-colors"
             >
               Talk to an Expert

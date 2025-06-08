@@ -17,7 +17,7 @@ const AboutValues = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="Benefits" className="py-16 bg-gray-50 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
