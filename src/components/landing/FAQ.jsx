@@ -100,7 +100,7 @@ const FAQ = () => {
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="text-lg font-medium text-gray-900 mb-3">Chat on WhatsApp</h3>
                 <p className="text-gray-600 mb-4">Have quick questions? Start a conversation with our team now.</p>
-                <Link href="https://wa.me/16473351369" className="text-blue-600 hover:text-blue-800 flex items-center font-medium underline underline-offset-4" target="_blank" rel="noopener noreferrer">
+                <Link href="https://wa.me/+12898932989" className="text-blue-600 hover:text-blue-800 flex items-center font-medium underline underline-offset-4" target="_blank" rel="noopener noreferrer">
                   Start a WhatsApp Chat ↗
                 </Link>
               </div>
@@ -108,7 +108,7 @@ const FAQ = () => {
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="text-lg font-medium text-gray-900 mb-3">Schedule a Call</h3>
                 <p className="text-gray-600 mb-4">Book a free consultation to discuss your accessibility needs.</p>
-                <Link href="https://cal.com/enabledtalent" className="text-blue-600 hover:text-blue-800 flex items-center font-medium underline underline-offset-4">
+                <Link href="https://calendly.com/jeby-enabledtalent/30min?month=2025-06" className="text-blue-600 hover:text-blue-800 flex items-center font-medium underline underline-offset-4">
                   Schedule a Call ↗
                 </Link>
               </div>
